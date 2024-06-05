@@ -1,7 +1,8 @@
 import * as fs from "fs"
 
-const TERM_DAYS = 1
-const MAX_ITERATIONS = 70
+const TERM_DAYS = 2
+const MAX_ITERATIONS = 20
+const OFFICIAL_URL_SUFFIX = ".bsky.network"
 
 async function main () {
   const entireData = await makeEntireData()
@@ -14,6 +15,7 @@ async function makeEntireData() {
   startedAt.setDate(startedAt.getDate() - TERM_DAYS)
   const entireLogs = await fetchEntireLogs(startedAt, MAX_ITERATIONS)
   const endpoints = makeEndpoints(entireLogs)
+  await injectServerInfo(endpoints)
   return {
     startedAt: startedAt.toISOString(),
     endpoints,
@@ -59,7 +61,7 @@ async function fetchLogs (after, count = 1000) {
   if (response == null ||
       response instanceof Error
   ) {
-    console.error("fetchLogs is failed.", after)
+    console.error("fetchLogs failed.", error)
     return
   }
   return (await response.text())
@@ -104,8 +106,8 @@ function makeEndpoints (entireLogs) {
     })
     // Sort by official servers
     .sort((a, b) => {
-      const isAOfficial = a.url.endsWith(".bsky.network")
-      const isBOfficial = b.url.endsWith(".bsky.network")
+      const isAOfficial = a.url.endsWith(OFFICIAL_URL_SUFFIX)
+      const isBOfficial = b.url.endsWith(OFFICIAL_URL_SUFFIX)
       return isAOfficial && !isBOfficial
         ? - 1
         : !isAOfficial && isBOfficial
@@ -113,6 +115,35 @@ function makeEndpoints (entireLogs) {
           : 0
     })
   return endpoints
+}
+
+async function injectServerInfo (endpoints) {
+  for (const endpoint of endpoints) {
+    // Skip official server
+    if (endpoint.url.endsWith(OFFICIAL_URL_SUFFIX)) {
+      continue
+    }
+    const response = await fetch(
+      // SEE: https://docs.bsky.app/docs/api/com-atproto-server-describe-server
+      `${endpoint.url}/xrpc/com.atproto.server.describeServer`,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
+      .then((response) => response)
+      .catch((error) => error)
+    if (response == null ||
+        response instanceof Error
+    ) {
+      console.error("injectServerInfo failed.", error)
+      continue
+    }
+    const json = await response.json()
+    endpoint.inviteCodeRequired = json.inviteCodeRequired ?? false
+    endpoint.phoneVerificationRequired = json.phoneVerificationRequired ?? false
+  }
 }
 
 function createJson (entireData) {
@@ -123,7 +154,7 @@ function createReadMe (entireData) {
   const startedAt = new Date(entireData.startedAt).toLocaleString()
   const endedAt = (new Date()).toLocaleString()
   const list = entireData.endpoints.map((endpoint) => {
-    return `* ${endpoint.url} ⏰${endpoint.createdAt}`
+    return `* ${endpoint.url} ${endpoint.inviteCodeRequired ? "🎫" : ""} ${endpoint.phoneVerificationRequired ? "📞" : ""}`.trim()
   }).join("\n")
   const readMe = `# ⭐ Klearlist
 Klearlist is a ATProtocol's PDS list. Note, this list is a partial, not an all.
