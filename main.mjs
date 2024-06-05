@@ -2,8 +2,8 @@ import * as fs from "fs"
 import * as path from "path"
 import { fileURLToPath } from "url"
 
-const TERM_DAYS = 2
-const MAX_ITERATIONS = 20
+const TERM_DAYS = 1
+const MAX_ITERATIONS = 10
 const OFFICIAL_URL_SUFFIX = ".bsky.network"
 
 const now = new Date()
@@ -251,7 +251,7 @@ function createReadMe (currentData) {
   }).join("\n")
   const readMe = `# ⭐ Klearlist
 
-Klearlist is a ATProtocol's PDS list. Note, this list is a partial, not an all.
+Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all.
 
 JSON file is [here](./list.json) .
 
