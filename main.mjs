@@ -1,5 +1,6 @@
 import * as fs from "fs"
 import * as path from "path"
+import { fileURLToPath } from "url"
 
 const TERM_DAYS = 2
 const MAX_ITERATIONS = 20
@@ -7,8 +8,12 @@ const OFFICIAL_URL_SUFFIX = ".bsky.network"
 
 const now = new Date()
 
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
 async function main () {
   const currentData = await makeCurrentData()
+  createLogFolder("./log")
   createLogFile(currentData)
   const entireData = makeEntireData("./log")
   createJsonFile(entireData)
@@ -166,6 +171,13 @@ function sortEndpoints (endpoints) {
     })
 }
 
+function createLogFolder (dirPath) {
+  const directoryPath = path.join(__dirname, dirPath)
+  if (!fs.existsSync(directoryPath)) {
+    fs.mkdirSync(directoryPath)
+  }
+}
+
 function createLogFile (currentData) {
   const suffix = now.getTime()
   fs.writeFileSync(`./log/list-${suffix}.json`, JSON.stringify(currentData), "utf8")
@@ -238,8 +250,11 @@ function createReadMe (currentData) {
     return `* ${endpoint.url} ${endpoint.inviteCodeRequired ? "🎫" : ""} ${endpoint.phoneVerificationRequired ? "📞" : ""}`.trim()
   }).join("\n")
   const readMe = `# ⭐ Klearlist
+
 Klearlist is a ATProtocol's PDS list. Note, this list is a partial, not an all.
+
 JSON file is [here](./list.json) .
+
 Updated at ${updatedAt}
 
 ${list}
