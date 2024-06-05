@@ -26,6 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: node main.mjs
+    - run: git config user.email github-actions@github.com
+    - run: git config user.name github-actions
     - run: git add .
     - run: git commit -m "update"
     - run: git push
