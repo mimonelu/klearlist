@@ -4,16 +4,16 @@ Klearlist is a ATProtocol's PDS list. Note, this list is a partial, not an all.
 
 JSON file is [here](./list.json) .
 
-Updated at 2024/6/5 21:55:30
+Updated at 6/5/2024, 12:57:05 PM
 
-* https://agaric.us-west.host.bsky.network
 * https://conocybe.us-west.host.bsky.network
-* https://boletus.us-west.host.bsky.network
-* https://lepista.us-west.host.bsky.network
-* https://maitake.us-west.host.bsky.network
+* https://agaric.us-west.host.bsky.network
 * https://hydnum.us-west.host.bsky.network
 * https://chaga.us-west.host.bsky.network
+* https://lepista.us-west.host.bsky.network
 * https://verpa.us-west.host.bsky.network
+* https://boletus.us-west.host.bsky.network
+* https://maitake.us-west.host.bsky.network
 * https://blewit.us-west.host.bsky.network
 * https://amanita.us-east.host.bsky.network
 * https://porcini.us-east.host.bsky.network
