@@ -1,20 +1,25 @@
 import * as fs from "fs"
+import * as path from "path"
 
 const TERM_DAYS = 2
 const MAX_ITERATIONS = 20
 const OFFICIAL_URL_SUFFIX = ".bsky.network"
 
+const now = new Date()
+
 async function main () {
-  const entireData = await makeEntireData()
-  createJson(entireData)
+  const currentData = await makeCurrentData()
+  createLogFile(currentData)
+  const entireData = makeEntireData("./log")
+  createJsonFile(entireData)
   createReadMe(entireData)
 }
 
-async function makeEntireData() {
-  const startedAt = new Date()
+async function makeCurrentData() {
+  const startedAt = new Date(now)
   startedAt.setDate(startedAt.getDate() - TERM_DAYS)
-  const entireLogs = await fetchEntireLogs(startedAt, MAX_ITERATIONS)
-  const endpoints = makeEndpoints(entireLogs)
+  const currentLogs = await fetchCurrentLogs(startedAt, MAX_ITERATIONS)
+  const endpoints = makeEndpoints(currentLogs)
   await injectServerInfo(endpoints)
   return {
     startedAt: startedAt.toISOString(),
@@ -22,28 +27,28 @@ async function makeEntireData() {
   }
 }
 
-async function fetchEntireLogs (startedAt, maxIterations) {
-  const entireLogs = []
+async function fetchCurrentLogs (startedAt, maxIterations) {
+  const currentLogs = []
   for (let i = 0; i < maxIterations; i ++) {
     const logs = await fetchLogs(startedAt.toISOString(), 1000)
     // console.log(startedAt, i, logs.length)
     if (logs == null ||
         logs.length <= 1
     ) {
-      return entireLogs
+      return currentLogs
     }
     const createdAt = logs.at(- 1)?.createdAt
     if (createdAt == null) {
       console.error("createdAt is null/undefined.", logs.at(- 1))
-      return entireLogs
+      return currentLogs
     }
     startedAt = new Date(createdAt)
-    entireLogs.push(...logs)
+    currentLogs.push(...logs)
 
     // 💕 Drive safely...
     await wait(1000)
   }
-  return entireLogs
+  return currentLogs
 }
 
 async function fetchLogs (after, count = 1000) {
@@ -61,7 +66,7 @@ async function fetchLogs (after, count = 1000) {
   if (response == null ||
       response instanceof Error
   ) {
-    console.error("fetchLogs failed.", error)
+    console.error("fetchLogs failed.", response)
     return
   }
   return (await response.text())
@@ -69,9 +74,9 @@ async function fetchLogs (after, count = 1000) {
     ?.map((text) => JSON.parse(text))
 }
 
-function makeEndpoints (entireLogs) {
+function makeEndpoints (currentLogs) {
   const endpointMap = new Map()
-  entireLogs.forEach((doc) => {
+  currentLogs.forEach((doc) => {
     const pds = doc.operation?.services?.atproto_pds
     if (pds?.type !== "AtprotoPersonalDataServer" ||
       !(pds?.endpoint)
@@ -95,25 +100,7 @@ function makeEndpoints (entireLogs) {
         createdAt: endpoint.createdAt,
       }
     })
-  endpoints
-    // Sort by createdAt
-    .sort((a, b) => {
-      return a.createdAt < b.createdAt
-        ? 1
-        : a.createdAt > b.createdAt
-          ? - 1
-          : 0
-    })
-    // Sort by official servers
-    .sort((a, b) => {
-      const isAOfficial = a.url.endsWith(OFFICIAL_URL_SUFFIX)
-      const isBOfficial = b.url.endsWith(OFFICIAL_URL_SUFFIX)
-      return isAOfficial && !isBOfficial
-        ? - 1
-        : !isAOfficial && isBOfficial
-          ? 1
-          : 0
-    })
+  sortEndpoints(endpoints)
   return endpoints
 }
 
@@ -137,29 +124,123 @@ async function injectServerInfo (endpoints) {
     if (response == null ||
         response instanceof Error
     ) {
-      console.error("injectServerInfo failed.", error)
+      console.error("describeServer failed.", response)
+      endpoint.alive = false
       continue
     }
     const json = await response.json()
+      .then((response) => response)
+      .catch((error) => error)
+    if (json == null ||
+        json instanceof Error
+    ) {
+      console.error("response.json() failed.", json)
+      endpoint.alive = false
+      continue
+    }
+    endpoint.alive = true
     endpoint.inviteCodeRequired = json.inviteCodeRequired ?? false
     endpoint.phoneVerificationRequired = json.phoneVerificationRequired ?? false
   }
 }
 
-function createJson (entireData) {
-  fs.writeFileSync("./list.json", JSON.stringify(entireData), "utf8")
+function sortEndpoints (endpoints) {
+  endpoints
+    // Sort by createdAt
+    .sort((a, b) => {
+      return a.createdAt < b.createdAt
+        ? 1
+        : a.createdAt > b.createdAt
+          ? - 1
+          : 0
+    })
+    // Sort by official servers
+    .sort((a, b) => {
+      const isAOfficial = a.url.endsWith(OFFICIAL_URL_SUFFIX)
+      const isBOfficial = b.url.endsWith(OFFICIAL_URL_SUFFIX)
+      return isAOfficial && !isBOfficial
+        ? - 1
+        : !isAOfficial && isBOfficial
+          ? 1
+          : 0
+    })
 }
 
-function createReadMe (entireData) {
-  const startedAt = new Date(entireData.startedAt).toLocaleString()
-  const endedAt = (new Date()).toLocaleString()
-  const list = entireData.endpoints.map((endpoint) => {
+function createLogFile (currentData) {
+  const suffix = now.getTime()
+  fs.writeFileSync(`./log/list-${suffix}.json`, JSON.stringify(currentData), "utf8")
+}
+
+function makeEntireData (dirPath) {
+  const filePaths = []
+  fs.readdirSync(dirPath).forEach((file) => {
+    const filePath = path.join(dirPath, file)
+    const stat = fs.statSync(filePath)
+    if (!(stat?.isFile())) {
+      return
+    }
+    filePaths.push(filePath)
+  })
+  filePaths.sort((a, b) => {
+    return a < b
+      ? 1
+      : a > b
+        ? - 1
+        : 0
+  })
+  const endpointMap = new Map()
+  filePaths.forEach((filePath) => {
+    const text = fs.readFileSync(filePath, { encoding: "utf8" })
+    const json = JSON.parse(text)
+    json.endpoints.forEach((endpoint) => {
+      const existing = endpointMap.get(endpoint.url)
+      if (existing != null) {
+        existing.createdAt = endpoint.createdAt
+        if (endpoint.alive != null) {
+          existing.alive = endpoint.alive
+        }
+        if (endpoint.inviteCodeRequired != null) {
+          existing.inviteCodeRequired = endpoint.inviteCodeRequired
+        }
+        if (endpoint.phoneVerificationRequired != null) {
+          existing.phoneVerificationRequired = endpoint.phoneVerificationRequired
+        }
+      } else {
+        endpointMap.set(endpoint.url, endpoint)
+      }
+    })
+  })
+  const endpoints = Object.keys(Object.fromEntries(endpointMap))
+    .map((key) => ({ ...endpointMap.get(key) }))
+  sortEndpoints(endpoints)
+  removeDeadEndpoints(endpoints)
+  return {
+    startedAt: now.toISOString(),
+    endpoints,
+  }
+}
+
+function removeDeadEndpoints (endpoints) {
+  endpoints.splice(
+    0,
+    endpoints.length,
+    ...endpoints.filter((endpoint) => endpoint.alive !== false)
+  )
+}
+
+function createJsonFile (entireData) {
+  fs.writeFileSync(`./list.json`, JSON.stringify(entireData), "utf8")
+}
+
+function createReadMe (currentData) {
+  const updatedAt = now.toLocaleString()
+  const list = currentData.endpoints.map((endpoint) => {
     return `* ${endpoint.url} ${endpoint.inviteCodeRequired ? "🎫" : ""} ${endpoint.phoneVerificationRequired ? "📞" : ""}`.trim()
   }).join("\n")
   const readMe = `# ⭐ Klearlist
 Klearlist is a ATProtocol's PDS list. Note, this list is a partial, not an all.
 JSON file is [here](./list.json) .
-Term: ${startedAt} - ${endedAt}
+Updated at ${updatedAt}
 
 ${list}
 
