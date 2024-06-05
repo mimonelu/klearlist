@@ -1,7 +1,7 @@
 import * as fs from "fs"
 
-const DAYS = 7
-const MAX_ITERATION = 70
+const TERM_DAYS = 1
+const MAX_ITERATIONS = 70
 
 async function main () {
   const entireData = await makeEntireData()
@@ -11,8 +11,8 @@ async function main () {
 
 async function makeEntireData() {
   const startedAt = new Date()
-  startedAt.setDate(startedAt.getDate() - DAYS)
-  const entireLogs = await fetchEntireLogs(startedAt, MAX_ITERATION)
+  startedAt.setDate(startedAt.getDate() - TERM_DAYS)
+  const entireLogs = await fetchEntireLogs(startedAt, MAX_ITERATIONS)
   const endpoints = makeEndpoints(entireLogs)
   return {
     startedAt: startedAt.toISOString(),
@@ -20,9 +20,9 @@ async function makeEntireData() {
   }
 }
 
-async function fetchEntireLogs (startedAt, maxIteration) {
+async function fetchEntireLogs (startedAt, maxIterations) {
   const entireLogs = []
-  for (let i = 0; i < maxIteration; i ++) {
+  for (let i = 0; i < maxIterations; i ++) {
     const logs = await fetchLogs(startedAt.toISOString(), 1000)
     // console.log(startedAt, i, logs.length)
     if (logs == null ||
@@ -78,10 +78,10 @@ function makeEndpoints (entireLogs) {
     }
     const existing = endpointMap.get(pds.endpoint)
     if (existing != null) {
-      existing.count ++
+      existing.createdAt = doc.createdAt
     } else {
       endpointMap.set(pds.endpoint, {
-        count: 1,
+        createdAt: doc.createdAt,
       })
     }
   })
@@ -90,16 +90,16 @@ function makeEndpoints (entireLogs) {
       const endpoint = endpointMap.get(key)
       return {
         url: key,
-        count: endpoint.count,
+        createdAt: endpoint.createdAt,
       }
     })
 
-  // Sort by URL
+  // Sort by createdAt
   endpoints.sort((a, b) => {
-    return a.url < b.url
-      ? - 1
-      : a.url > b.url
-        ? 1
+    return a.createdAt < b.createdAt
+      ? 1
+      : a.createdAt > b.createdAt
+        ? - 1
         : 0
   })
 
@@ -114,7 +114,7 @@ function createReadMe (entireData) {
   const startedAt = new Date(entireData.startedAt).toLocaleString()
   const endedAt = (new Date()).toLocaleString()
   const list = entireData.endpoints.map((endpoint) => {
-    return `* ${endpoint.url} : ${endpoint.count}`
+    return `* ${endpoint.url} : ${endpoint.createdAt}`
   }).join("\n")
   const readMe = `# ⭐ Klearlist
 Klearlist is a ATProtocol's PDS list. Note, this list is a partial, not an all.
