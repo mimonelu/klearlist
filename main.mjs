@@ -91,9 +91,12 @@ function createJson (list) {
 }
 
 function createReadMe (list) {
-  const readMe = ["# Klearlist\n"]
+  const readMe = ["# ⭐ Klearlist\n"]
+  readMe.push("Klearlist is a ATProtocol's PDS list. Note, this list is a partial, not an all.\n")
+  readMe.push("JSON file is [here](./list.json) .\n")
   readMe.push(`Term: ${new Date(list.startedAt).toLocaleString()} - ${(new Date()).toLocaleString()}\n`)
   readMe.push(...list.endpoints.map((endpoint) => `* ${endpoint.url} : ${endpoint.count}`))
+  readMe.push("\nKlearlist © 2024 mimonelu")
   fs.writeFileSync("./README.md", readMe.join("\n"), "utf8")
 }
 
