@@ -93,16 +93,25 @@ function makeEndpoints (entireLogs) {
         createdAt: endpoint.createdAt,
       }
     })
-
-  // Sort by createdAt
-  endpoints.sort((a, b) => {
-    return a.createdAt < b.createdAt
-      ? 1
-      : a.createdAt > b.createdAt
+  endpoints
+    // Sort by createdAt
+    .sort((a, b) => {
+      return a.createdAt < b.createdAt
+        ? 1
+        : a.createdAt > b.createdAt
+          ? - 1
+          : 0
+    })
+    // Sort by official servers
+    .sort((a, b) => {
+      const isAOfficial = a.url.endsWith(".bsky.network")
+      const isBOfficial = b.url.endsWith(".bsky.network")
+      return isAOfficial && !isBOfficial
         ? - 1
-        : 0
-  })
-
+        : !isAOfficial && isBOfficial
+          ? 1
+          : 0
+    })
   return endpoints
 }
 
@@ -114,7 +123,7 @@ function createReadMe (entireData) {
   const startedAt = new Date(entireData.startedAt).toLocaleString()
   const endedAt = (new Date()).toLocaleString()
   const list = entireData.endpoints.map((endpoint) => {
-    return `* ${endpoint.url} : ${endpoint.createdAt}`
+    return `* ${endpoint.url} ⏰${endpoint.createdAt}`
   }).join("\n")
   const readMe = `# ⭐ Klearlist
 Klearlist is a ATProtocol's PDS list. Note, this list is a partial, not an all.
