@@ -1,10 +1,10 @@
 # ⭐ Klearlist
 
-Klearlist is a ATProtocol's PDS list. Note, this list is a partial, not an all.
+Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all.
 
 JSON file is [here](./list.json) .
 
-Updated at 6/5/2024, 12:57:05 PM
+Updated at 6/5/2024, 1:03:34 PM
 
 * https://conocybe.us-west.host.bsky.network
 * https://agaric.us-west.host.bsky.network
