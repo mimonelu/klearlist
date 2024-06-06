@@ -2,18 +2,14 @@ import * as fs from "fs"
 import * as path from "path"
 import { fileURLToPath } from "url"
 
-const TERM_DAYS = 1
-const MAX_ITERATIONS = 10
+const TERM_DAYS = 2
+const MAX_ITERATIONS = 20
 const OFFICIAL_URL_SUFFIX = ".bsky.network"
-
-const now = new Date()
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+const NOW = new Date()
 
 async function main () {
   const currentData = await makeCurrentData()
-  createLogFolder("./log")
+  createDirectory("./log")
   createLogFile(currentData)
   const entireData = makeEntireData("./log")
   createJsonFile(entireData)
@@ -21,7 +17,7 @@ async function main () {
 }
 
 async function makeCurrentData() {
-  const startedAt = new Date(now)
+  const startedAt = new Date(NOW)
   startedAt.setDate(startedAt.getDate() - TERM_DAYS)
   const currentLogs = await fetchCurrentLogs(startedAt, MAX_ITERATIONS)
   const endpoints = makeEndpoints(currentLogs)
@@ -171,7 +167,9 @@ function sortEndpoints (endpoints) {
     })
 }
 
-function createLogFolder (dirPath) {
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+function createDirectory (dirPath) {
   const directoryPath = path.join(__dirname, dirPath)
   if (!fs.existsSync(directoryPath)) {
     fs.mkdirSync(directoryPath)
@@ -179,7 +177,7 @@ function createLogFolder (dirPath) {
 }
 
 function createLogFile (currentData) {
-  const suffix = now.getTime()
+  const suffix = NOW.getTime()
   fs.writeFileSync(`./log/list-${suffix}.json`, JSON.stringify(currentData), "utf8")
 }
 
@@ -227,7 +225,7 @@ function makeEntireData (dirPath) {
   sortEndpoints(endpoints)
   removeDeadEndpoints(endpoints)
   return {
-    startedAt: now.toISOString(),
+    startedAt: NOW.toISOString(),
     endpoints,
   }
 }
@@ -245,7 +243,7 @@ function createJsonFile (entireData) {
 }
 
 function createReadMe (currentData) {
-  const updatedAt = now.toLocaleString()
+  const updatedAt = NOW.toLocaleString()
   const list = currentData.endpoints.map((endpoint) => {
     return `* ${endpoint.url} ${endpoint.inviteCodeRequired ? "🎫" : ""} ${endpoint.phoneVerificationRequired ? "📞" : ""}`.trim()
   }).join("\n")
