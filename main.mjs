@@ -244,9 +244,13 @@ function createJsonFile (entireData) {
 
 function createReadMe (currentData) {
   const updatedAt = NOW.toLocaleString()
-  const list = currentData.endpoints.map((endpoint) => {
-    return `* ${endpoint.url} ${endpoint.inviteCodeRequired ? "🎫" : ""} ${endpoint.phoneVerificationRequired ? "📞" : ""}`.trim()
-  }).join("\n")
+  const list = [
+    "|URL|Invite|Phone|",
+    "|-|-|-|",
+    ...currentData.endpoints.map((endpoint) => {
+      return `|${endpoint.url}|${endpoint.inviteCodeRequired ? "🎫" : ""}|${endpoint.phoneVerificationRequired ? "📞" : ""}|`
+    }),
+  ].join("\n")
   const readMe = `# ⭐ Klearlist
 
 Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all.
