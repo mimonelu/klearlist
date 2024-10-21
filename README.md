@@ -4,10 +4,21 @@ Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all.
 
 JSON file is [here](./list.json) .
 
-Updated at 10/20/2024, 3:13:26 AM
+Updated at 10/21/2024, 3:12:50 AM
 
 |URL|Invite|Phone|
 |-|-|-|
+|https://chanterelle.us-west.host.bsky.network|||
+|https://witchesbutter.us-west.host.bsky.network|||
+|https://milkcap.us-west.host.bsky.network|||
+|https://matsutake.us-west.host.bsky.network|||
+|https://shaggymane.us-west.host.bsky.network|||
+|https://button.us-west.host.bsky.network|||
+|https://cremini.us-west.host.bsky.network|||
+|https://stinkhorn.us-west.host.bsky.network|||
+|https://gomphus.us-west.host.bsky.network|||
+|https://bracket.us-west.host.bsky.network|||
+|https://ganoderma.us-west.host.bsky.network|||
 |https://cordyceps.us-west.host.bsky.network|||
 |https://woodear.us-west.host.bsky.network|||
 |https://coral.us-east.host.bsky.network|||
@@ -34,6 +45,11 @@ Updated at 10/20/2024, 3:13:26 AM
 |https://shiitake.us-east.host.bsky.network|||
 |https://russula.us-west.host.bsky.network|||
 |https://shimeji.us-east.host.bsky.network|||
+|https://pds.kingyosun.com|🎫||
+|https://luxembourg.zephyr.moe|🎫||
+|https://home.okdog.link|🎫||
+|https://sky.oxo.hk|🎫||
+|https://furry.asia|🎫||
 |https://bsky.titaniumnet.work|🎫||
 |https://bluesky.ritsuka.moe|🎫||
 |https://estrogen.rocks|🎫||
