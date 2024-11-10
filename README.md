@@ -4,10 +4,20 @@ Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all.
 
 JSON file is [here](./list.json) .
 
-Updated at 11/9/2024, 3:07:27 AM
+Updated at 11/10/2024, 3:09:35 AM
 
 |URL|Invite|Phone|
 |-|-|-|
+|https://truffle.us-east.host.bsky.network|||
+|https://velvetfoot.us-east.host.bsky.network|||
+|https://splitgill.us-east.host.bsky.network|||
+|https://panthercap.us-east.host.bsky.network|||
+|https://earthstar.us-east.host.bsky.network|||
+|https://scarletina.us-east.host.bsky.network|||
+|https://meadow.us-east.host.bsky.network|||
+|https://parasol.us-east.host.bsky.network|||
+|https://reishi.us-east.host.bsky.network|||
+|https://helvella.us-east.host.bsky.network|||
 |https://chanterelle.us-west.host.bsky.network|||
 |https://witchesbutter.us-west.host.bsky.network|||
 |https://milkcap.us-west.host.bsky.network|||
@@ -45,6 +55,16 @@ Updated at 11/9/2024, 3:07:27 AM
 |https://shiitake.us-east.host.bsky.network|||
 |https://russula.us-west.host.bsky.network|||
 |https://shimeji.us-east.host.bsky.network|||
+|https://pds.pvey.es|🎫||
+|https://pds.chubby.wang|🎫||
+|https://chubby.wang|🎫||
+|https://yeva.su|🎫||
+|https://atproto.is-rocket.science|🎫||
+|https://bsky.7086cmd.me|🎫||
+|https://purpledog.space|🎫||
+|https://bs.jpu.jp|🎫||
+|https://pds.clart.zip|🎫||
+|https://pdsrv.wetschysour.com|🎫||
 |https://tealshark.ca|🎫||
 |https://bsky.bradfuller.xyz|🎫||
 |https://pds.jftiv.org|🎫||
