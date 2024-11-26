@@ -4,10 +4,13 @@ Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all.
 
 JSON file is [here](./list.json) .
 
-Updated at 11/25/2024, 3:17:23 AM
+Updated at 11/26/2024, 3:16:03 AM
 
 |URL|Invite|Phone|
 |-|-|-|
+|https://poisonpie.us-west.host.bsky.network|||
+|https://fibercap.us-west.host.bsky.network|||
+|https://brittlegill.us-west.host.bsky.network|||
 |https://blusher.us-east.host.bsky.network|||
 |https://yellowfoot.us-west.host.bsky.network|||
 |https://truffle.us-east.host.bsky.network|||
@@ -57,6 +60,17 @@ Updated at 11/25/2024, 3:17:23 AM
 |https://shiitake.us-east.host.bsky.network|||
 |https://russula.us-west.host.bsky.network|||
 |https://shimeji.us-east.host.bsky.network|||
+|https://bsky.scalix.social|🎫||
+|https://uhh.how|🎫||
+|https://daliban-dev.cloud|🎫||
+|https://opelly.dev|🎫||
+|https://sky.dhilton.xyz|🎫||
+|https://bsky.solidunit.win|🎫||
+|https://celsi.social|🎫||
+|https://friedrichsen.online|🎫||
+|https://sky.iamernie.ca|🎫||
+|https://pds.labrecheho.me|🎫||
+|https://bluesky.byrnbaker.me|🎫||
 |https://bluesky.bikebus.app|🎫||
 |https://bluesky.onno.cool|🎫||
 |https://demeulder.us|🎫||
