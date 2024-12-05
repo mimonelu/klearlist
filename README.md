@@ -4,7 +4,7 @@ Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all.
 
 JSON file is [here](./list.json) .
 
-Updated at 12/4/2024, 3:19:24 AM
+Updated at 12/5/2024, 3:19:45 AM
 
 |URL|Invite|Phone|
 |-|-|-|
@@ -60,6 +60,12 @@ Updated at 12/4/2024, 3:19:24 AM
 |https://shiitake.us-east.host.bsky.network|||
 |https://russula.us-west.host.bsky.network|||
 |https://shimeji.us-east.host.bsky.network|||
+|https://pds.nicoritschel.com|🎫||
+|https://bsky.call-151.net|🎫||
+|https://pds.bradwenner.digital|🎫||
+|https://southla.social|🎫||
+|https://nacg.club|🎫||
+|https://pds.v0id.me|🎫||
 |https://bluesky.aviate.org|🎫||
 |https://pds.shaggylabs.com|🎫||
 |https://yashas.social|||
