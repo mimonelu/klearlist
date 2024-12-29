@@ -4,10 +4,21 @@ Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all.
 
 JSON file is [here](./list.json) .
 
-Updated at 12/28/2024, 3:07:08 AM
+Updated at 12/29/2024, 3:12:43 AM
 
 |URL|Invite|Phone|
 |-|-|-|
+|https://polypore.us-west.host.bsky.network|||
+|https://waxcap.us-west.host.bsky.network|||
+|https://goldenear.us-west.host.bsky.network|||
+|https://mycena.us-west.host.bsky.network|||
+|https://suillus.us-west.host.bsky.network|||
+|https://rooter.us-west.host.bsky.network|||
+|https://grisette.us-west.host.bsky.network|||
+|https://mottlegill.us-west.host.bsky.network|||
+|https://dapperling.us-west.host.bsky.network|||
+|https://pioppino.us-west.host.bsky.network|||
+|https://elfcup.us-east.host.bsky.network|||
 |https://oysterling.us-west.host.bsky.network|||
 |https://woodtuft.us-west.host.bsky.network|||
 |https://scalycap.us-west.host.bsky.network|||
@@ -63,6 +74,11 @@ Updated at 12/28/2024, 3:07:08 AM
 |https://shiitake.us-east.host.bsky.network|||
 |https://russula.us-west.host.bsky.network|||
 |https://shimeji.us-east.host.bsky.network|||
+|https://bluesky.inoreader.com|🎫||
+|https://pds.mars.ngo|🎫||
+|https://pds.bsea.social|🎫||
+|https://sky.see.micenest.xyz|🎫||
+|https://decco.net|🎫||
 |https://borges.net.br|🎫||
 |https://pds.vrn.im|🎫||
 |https://pxlmo.net|🎫||
