@@ -3,10 +3,10 @@
 Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all. JSON file is [here](./list.json) .
 
 * Official PDS: 65
-* 3rd party PDS: 548
+* 3rd party PDS: 551
 * 3rd party PDS (No invite required): 16
 
-Updated at 2025/2/11 14:28:52
+Updated at 2/11/2025, 5:52:14 AM
 
 |URL|Invite code|Phone verification|
 |-|-|-|
@@ -75,6 +75,9 @@ Updated at 2025/2/11 14:28:52
 |https://maitake.us-west.host.bsky.network|Free to join|No phone check|
 |https://agaric.us-west.host.bsky.network|Free to join|No phone check|
 |https://boletus.us-west.host.bsky.network|Free to join|No phone check|
+|https://blauwski.nl|Invite required|No phone check|
+|https://pds.jellyf.sh|Invite required|No phone check|
+|https://bsky.a8c.com|Invite required|No phone check|
 |https://stmediaserver3.site|Invite required|No phone check|
 |https://msphere.dnch.me|Invite required|No phone check|
 |https://feed.nian.me|Invite required|No phone check|
