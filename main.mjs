@@ -274,11 +274,22 @@ function createReadMe (currentData) {
       return `|${endpoint.url}|${endpoint.inviteCodeRequired ? "Invite required" : "Free to join"}|${endpoint.phoneVerificationRequired ? "Phone required" : "No phone check"}|`
     }),
   ].join("\n")
+  const numberOfOfficial = currentData.endpoints.filter((endpoint) => {
+    return endpoint.url.endsWith(OFFICIAL_URL_SUFFIX)
+  }).length
+  const numberOfUnofficial = currentData.endpoints.filter((endpoint) => {
+    return !endpoint.url.endsWith(OFFICIAL_URL_SUFFIX)
+  }).length
+  const numberOfNoInviteRequiredUnofficial = currentData.endpoints.filter((endpoint) => {
+    return !endpoint.url.endsWith(OFFICIAL_URL_SUFFIX) && !endpoint.inviteCodeRequired
+  }).length
   const readMe = `# ⭐ Klearlist
 
-Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all.
+Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all. JSON file is [here](./list.json) .
 
-JSON file is [here](./list.json) .
+* Official PDS: ${numberOfOfficial}
+* 3rd party PDS: ${numberOfUnofficial}
+* 3rd party PDS (No invite required): ${numberOfNoInviteRequiredUnofficial}
 
 Updated at ${updatedAt}
 

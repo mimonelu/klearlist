@@ -1,10 +1,12 @@
 # ⭐ Klearlist
 
-Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all.
+Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all. JSON file is [here](./list.json) .
 
-JSON file is [here](./list.json) .
+* Official PDS: 65
+* 3rd party PDS: 548
+* 3rd party PDS (No invite required): 16
 
-Updated at 2025/2/11 14:17:41
+Updated at 2025/2/11 14:28:52
 
 |URL|Invite code|Phone verification|
 |-|-|-|
@@ -75,12 +77,10 @@ Updated at 2025/2/11 14:17:41
 |https://boletus.us-west.host.bsky.network|Free to join|No phone check|
 |https://stmediaserver3.site|Invite required|No phone check|
 |https://msphere.dnch.me|Invite required|No phone check|
-|https://bsky.xsns.jp|Invite required|No phone check|
 |https://feed.nian.me|Invite required|No phone check|
-|https://bluesky.kolakservers.com|Invite required|No phone check|
 |https://bsky.doskel.net|Invite required|No phone check|
+|https://bluesky.kolakservers.com|Invite required|No phone check|
 |https://lolc.at|Invite required|No phone check|
-|https://bsky.qualipsoft.com|Invite required|No phone check|
 |https://themeparkinnovations.com|Invite required|No phone check|
 |https://bsky.wshiz.com|Invite required|No phone check|
 |https://biryani.social|Invite required|No phone check|
