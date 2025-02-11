@@ -2,8 +2,8 @@ import * as fs from "fs"
 import * as path from "path"
 import { fileURLToPath } from "url"
 
-const TERM_DAYS = 2
-const MAX_ITERATIONS = 20
+const LOG_FETCH_DAYS = 2
+const MAX_LOG_FETCH_ITERATIONS = 20
 const OFFICIAL_URL_SUFFIX = ".bsky.network"
 const NOW = new Date()
 
@@ -16,12 +16,12 @@ async function main () {
   createReadMe(entireData)
 }
 
-async function makeCurrentData() {
+async function makeCurrentData () {
   const startedAt = new Date(NOW)
-  startedAt.setDate(startedAt.getDate() - TERM_DAYS)
-  const currentLogs = await fetchCurrentLogs(startedAt, MAX_ITERATIONS)
+  startedAt.setDate(startedAt.getDate() - LOG_FETCH_DAYS)
+  const currentLogs = await fetchCurrentLogs(startedAt, MAX_LOG_FETCH_ITERATIONS)
   const endpoints = makeEndpoints(currentLogs)
-  await injectServerInfo(endpoints)
+  await injectServerInfoToEndpoints(endpoints)
   return {
     startedAt: startedAt.toISOString(),
     endpoints,
@@ -64,8 +64,9 @@ async function fetchLogs (after, count = 1000) {
   )
     .then((response) => response)
     .catch((error) => error)
-  if (response == null ||
-      response instanceof Error
+  if (
+    response == null ||
+    response instanceof Error
   ) {
     console.error("fetchLogs failed.", response)
     return
@@ -105,7 +106,7 @@ function makeEndpoints (currentLogs) {
   return endpoints
 }
 
-async function injectServerInfo (endpoints) {
+async function injectServerInfoToEndpoints (endpoints) {
   for (const endpoint of endpoints) {
     // Skip official server
     if (endpoint.url.endsWith(OFFICIAL_URL_SUFFIX)) {
@@ -122,8 +123,9 @@ async function injectServerInfo (endpoints) {
     )
       .then((response) => response)
       .catch((error) => error)
-    if (response == null ||
-        response instanceof Error
+    if (
+      response == null ||
+      response instanceof Error
     ) {
       console.error("describeServer failed.", response)
       endpoint.alive = false
@@ -132,8 +134,9 @@ async function injectServerInfo (endpoints) {
     const json = await response.json()
       .then((response) => response)
       .catch((error) => error)
-    if (json == null ||
-        json instanceof Error
+    if (
+      json == null ||
+      json instanceof Error
     ) {
       console.error("response.json() failed.", json)
       endpoint.alive = false
@@ -245,10 +248,10 @@ function createJsonFile (entireData) {
 function createReadMe (currentData) {
   const updatedAt = NOW.toLocaleString()
   const list = [
-    "|URL|Invite|Phone|",
+    "|URL|Invite code|Phone verification|",
     "|-|-|-|",
     ...currentData.endpoints.map((endpoint) => {
-      return `|${endpoint.url}|${endpoint.inviteCodeRequired ? "🎫" : ""}|${endpoint.phoneVerificationRequired ? "📞" : ""}|`
+      return `|${endpoint.url}|${endpoint.inviteCodeRequired ? "Invite required" : "Free to join"}|${endpoint.phoneVerificationRequired ? "Phone required" : "No phone check"}|`
     }),
   ].join("\n")
   const readMe = `# ⭐ Klearlist
@@ -261,7 +264,7 @@ Updated at ${updatedAt}
 
 ${list}
 
-Klearlist © 2024 [mimonelu](https://bsky.app/profile/mimonelu.net)
+Klearlist © 2024-2025 [mimonelu](https://bsky.app/profile/mimonelu.net)
 `
   fs.writeFileSync("./README.md", readMe, "utf8")
 }
