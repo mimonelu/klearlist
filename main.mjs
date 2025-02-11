@@ -2,18 +2,37 @@ import * as fs from "fs"
 import * as path from "path"
 import { fileURLToPath } from "url"
 
-const LOG_FETCH_DAYS = 2
+const LOG_FETCH_DAYS = 1
 const MAX_LOG_FETCH_ITERATIONS = 20
 const OFFICIAL_URL_SUFFIX = ".bsky.network"
+const LOG_RETENTION_DAYS = 90
 const NOW = new Date()
 
 async function main () {
   const currentData = await makeCurrentData()
   createDirectory("./log")
+  deleteOldLogFiles("./log")
   createLogFile(currentData)
   const entireData = makeEntireData("./log")
   createJsonFile(entireData)
   createReadMe(entireData)
+}
+
+function deleteOldLogFiles (dirPath) {
+  const retentionDate = new Date(NOW)
+  retentionDate.setDate(retentionDate.getDate() - LOG_RETENTION_DAYS)
+  const files = fs.readdirSync(dirPath)
+  files.forEach((file) => {
+    const match = file.match(/^list-(\d+)\.json$/)
+    if (match) {
+      const fileTime = parseInt(match[1], 10)
+      const fileDate = new Date(fileTime)
+      if (fileDate < retentionDate) {
+        const filePath = path.join(dirPath, file)
+        fs.unlinkSync(filePath)
+      }
+    }
+  })
 }
 
 async function makeCurrentData () {
@@ -80,7 +99,8 @@ function makeEndpoints (currentLogs) {
   const endpointMap = new Map()
   currentLogs.forEach((doc) => {
     const pds = doc.operation?.services?.atproto_pds
-    if (pds?.type !== "AtprotoPersonalDataServer" ||
+    if (
+      pds?.type !== "AtprotoPersonalDataServer" ||
       !(pds?.endpoint)
     ) {
       return
