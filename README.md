@@ -3,101 +3,103 @@
 Klearlist is ATProtocol's PDS list. Note, this list is a partial, not an all. JSON file is [here](./list.json) .
 
 * Official PDS: 88
-* 3rd party PDS: 632
-* 3rd party PDS (No invite required): 303
+* 3rd party PDS: 597
+* 3rd party PDS (No invite required): 277
 
-Updated at 10/9/2026, 10:11:42 AM
+Updated at 10/10/2026, 9:33:03 AM
 
 |URL|Invite code|Phone verification|
 |-|-|-|
 |https://spaces-alpha.host.bsky.network|Free to join|No phone check|
 |https://dapperling.us-west.host.bsky.network|Free to join|No phone check|
-|https://helvella.us-east.host.bsky.network|Free to join|No phone check|
+|https://shiitake.us-east.host.bsky.network|Free to join|No phone check|
 |https://phellinus.us-west.host.bsky.network|Free to join|No phone check|
-|https://discina.us-west.host.bsky.network|Free to join|No phone check|
-|https://fibercap.us-west.host.bsky.network|Free to join|No phone check|
 |https://chalciporus.us-west.host.bsky.network|Free to join|No phone check|
-|https://auriporia.us-west.host.bsky.network|Free to join|No phone check|
-|https://rhizopogon.us-west.host.bsky.network|Free to join|No phone check|
-|https://brittlegill.us-west.host.bsky.network|Free to join|No phone check|
 |https://poisonpie.us-west.host.bsky.network|Free to join|No phone check|
-|https://fuzzyfoot.us-west.host.bsky.network|Free to join|No phone check|
-|https://chanterelle.us-west.host.bsky.network|Free to join|No phone check|
-|https://hygrophorus.us-west.host.bsky.network|Free to join|No phone check|
-|https://lobster.us-east.host.bsky.network|Free to join|No phone check|
-|https://witchesbutter.us-west.host.bsky.network|Free to join|No phone check|
-|https://stropharia.us-west.host.bsky.network|Free to join|No phone check|
-|https://pholiota.us-west.host.bsky.network|Free to join|No phone check|
-|https://oysterling.us-west.host.bsky.network|Free to join|No phone check|
-|https://agrocybe.us-west.host.bsky.network|Free to join|No phone check|
-|https://panus.us-west.host.bsky.network|Free to join|No phone check|
-|https://puffball.us-east.host.bsky.network|Free to join|No phone check|
-|https://pioppino.us-west.host.bsky.network|Free to join|No phone check|
+|https://brittlegill.us-west.host.bsky.network|Free to join|No phone check|
 |https://amanita.us-east.host.bsky.network|Free to join|No phone check|
-|https://jellybaby.us-east.host.bsky.network|Free to join|No phone check|
+|https://hebeloma.us-west.host.bsky.network|Free to join|No phone check|
+|https://rhizopogon.us-west.host.bsky.network|Free to join|No phone check|
+|https://auriporia.us-west.host.bsky.network|Free to join|No phone check|
+|https://cortinarius.us-west.host.bsky.network|Free to join|No phone check|
+|https://conocybe.us-west.host.bsky.network|Free to join|No phone check|
+|https://psathyrella.us-west.host.bsky.network|Free to join|No phone check|
+|https://fibercap.us-west.host.bsky.network|Free to join|No phone check|
+|https://discina.us-west.host.bsky.network|Free to join|No phone check|
+|https://agrocybe.us-west.host.bsky.network|Free to join|No phone check|
+|https://bankera.us-west.host.bsky.network|Free to join|No phone check|
+|https://stropharia.us-west.host.bsky.network|Free to join|No phone check|
+|https://verpa.us-west.host.bsky.network|Free to join|No phone check|
+|https://yellowfoot.us-west.host.bsky.network|Free to join|No phone check|
+|https://cordyceps.us-west.host.bsky.network|Free to join|No phone check|
 |https://enoki.us-east.host.bsky.network|Free to join|No phone check|
 |https://maitake.us-west.host.bsky.network|Free to join|No phone check|
-|https://shiitake.us-east.host.bsky.network|Free to join|No phone check|
-|https://hebeloma.us-west.host.bsky.network|Free to join|No phone check|
-|https://inkcap.us-east.host.bsky.network|Free to join|No phone check|
-|https://calocybe.us-west.host.bsky.network|Free to join|No phone check|
-|https://oyster.us-east.host.bsky.network|Free to join|No phone check|
-|https://yellowfoot.us-west.host.bsky.network|Free to join|No phone check|
-|https://gomphus.us-west.host.bsky.network|Free to join|No phone check|
-|https://shaggymane.us-west.host.bsky.network|Free to join|No phone check|
-|https://bankera.us-west.host.bsky.network|Free to join|No phone check|
-|https://rooter.us-west.host.bsky.network|Free to join|No phone check|
-|https://porcini.us-east.host.bsky.network|Free to join|No phone check|
-|https://mottlegill.us-west.host.bsky.network|Free to join|No phone check|
-|https://coral.us-east.host.bsky.network|Free to join|No phone check|
-|https://milkcap.us-west.host.bsky.network|Free to join|No phone check|
-|https://mycena.us-west.host.bsky.network|Free to join|No phone check|
-|https://blusher.us-east.host.bsky.network|Free to join|No phone check|
-|https://chaga.us-west.host.bsky.network|Free to join|No phone check|
-|https://mazegill.us-west.host.bsky.network|Free to join|No phone check|
-|https://leccinum.us-west.host.bsky.network|Free to join|No phone check|
-|https://grisette.us-west.host.bsky.network|Free to join|No phone check|
-|https://verpa.us-west.host.bsky.network|Free to join|No phone check|
-|https://lepista.us-west.host.bsky.network|Free to join|No phone check|
-|https://button.us-west.host.bsky.network|Free to join|No phone check|
-|https://morel.us-east.host.bsky.network|Free to join|No phone check|
-|https://ganoderma.us-west.host.bsky.network|Free to join|No phone check|
-|https://cordyceps.us-west.host.bsky.network|Free to join|No phone check|
-|https://splitgill.us-east.host.bsky.network|Free to join|No phone check|
-|https://parasol.us-east.host.bsky.network|Free to join|No phone check|
-|https://cortinarius.us-west.host.bsky.network|Free to join|No phone check|
-|https://hollowfoot.us-west.host.bsky.network|Free to join|No phone check|
-|https://hydnum.us-west.host.bsky.network|Free to join|No phone check|
-|https://entoloma.us-west.host.bsky.network|Free to join|No phone check|
-|https://shimeji.us-east.host.bsky.network|Free to join|No phone check|
-|https://conocybe.us-west.host.bsky.network|Free to join|No phone check|
-|https://elfcup.us-east.host.bsky.network|Free to join|No phone check|
-|https://woodear.us-west.host.bsky.network|Free to join|No phone check|
-|https://lionsmane.us-east.host.bsky.network|Free to join|No phone check|
-|https://scalycap.us-west.host.bsky.network|Free to join|No phone check|
-|https://agaric.us-west.host.bsky.network|Free to join|No phone check|
-|https://stinkhorn.us-west.host.bsky.network|Free to join|No phone check|
-|https://psathyrella.us-west.host.bsky.network|Free to join|No phone check|
-|https://woodtuft.us-west.host.bsky.network|Free to join|No phone check|
+|https://cremini.us-west.host.bsky.network|Free to join|No phone check|
+|https://hygrophorus.us-west.host.bsky.network|Free to join|No phone check|
+|https://truffle.us-east.host.bsky.network|Free to join|No phone check|
 |https://waxcap.us-west.host.bsky.network|Free to join|No phone check|
 |https://russula.us-west.host.bsky.network|Free to join|No phone check|
-|https://suillus.us-west.host.bsky.network|Free to join|No phone check|
-|https://bracket.us-west.host.bsky.network|Free to join|No phone check|
-|https://cremini.us-west.host.bsky.network|Free to join|No phone check|
-|https://polypore.us-west.host.bsky.network|Free to join|No phone check|
-|https://truffle.us-east.host.bsky.network|Free to join|No phone check|
-|https://magic.us-west.host.bsky.network|Free to join|No phone check|
-|https://velvetfoot.us-east.host.bsky.network|Free to join|No phone check|
-|https://matsutake.us-west.host.bsky.network|Free to join|No phone check|
-|https://goldenear.us-west.host.bsky.network|Free to join|No phone check|
-|https://gomphidius.us-west.host.bsky.network|Free to join|No phone check|
-|https://reishi.us-east.host.bsky.network|Free to join|No phone check|
-|https://scarletina.us-east.host.bsky.network|Free to join|No phone check|
-|https://earthstar.us-east.host.bsky.network|Free to join|No phone check|
-|https://boletus.us-west.host.bsky.network|Free to join|No phone check|
-|https://panthercap.us-east.host.bsky.network|Free to join|No phone check|
+|https://inkcap.us-east.host.bsky.network|Free to join|No phone check|
+|https://jellybaby.us-east.host.bsky.network|Free to join|No phone check|
 |https://blewit.us-west.host.bsky.network|Free to join|No phone check|
+|https://puffball.us-east.host.bsky.network|Free to join|No phone check|
+|https://oyster.us-east.host.bsky.network|Free to join|No phone check|
+|https://calocybe.us-west.host.bsky.network|Free to join|No phone check|
+|https://matsutake.us-west.host.bsky.network|Free to join|No phone check|
+|https://gomphus.us-west.host.bsky.network|Free to join|No phone check|
+|https://ganoderma.us-west.host.bsky.network|Free to join|No phone check|
+|https://hydnum.us-west.host.bsky.network|Free to join|No phone check|
+|https://rooter.us-west.host.bsky.network|Free to join|No phone check|
+|https://porcini.us-east.host.bsky.network|Free to join|No phone check|
+|https://grisette.us-west.host.bsky.network|Free to join|No phone check|
+|https://agaric.us-west.host.bsky.network|Free to join|No phone check|
+|https://morel.us-east.host.bsky.network|Free to join|No phone check|
+|https://lionsmane.us-east.host.bsky.network|Free to join|No phone check|
+|https://stinkhorn.us-west.host.bsky.network|Free to join|No phone check|
+|https://lobster.us-east.host.bsky.network|Free to join|No phone check|
+|https://mottlegill.us-west.host.bsky.network|Free to join|No phone check|
+|https://pioppino.us-west.host.bsky.network|Free to join|No phone check|
+|https://reishi.us-east.host.bsky.network|Free to join|No phone check|
+|https://earthstar.us-east.host.bsky.network|Free to join|No phone check|
+|https://velvetfoot.us-east.host.bsky.network|Free to join|No phone check|
+|https://pholiota.us-west.host.bsky.network|Free to join|No phone check|
+|https://oysterling.us-west.host.bsky.network|Free to join|No phone check|
+|https://shimeji.us-east.host.bsky.network|Free to join|No phone check|
+|https://hollowfoot.us-west.host.bsky.network|Free to join|No phone check|
+|https://goldenear.us-west.host.bsky.network|Free to join|No phone check|
 |https://meadow.us-east.host.bsky.network|Free to join|No phone check|
+|https://coral.us-east.host.bsky.network|Free to join|No phone check|
+|https://woodtuft.us-west.host.bsky.network|Free to join|No phone check|
+|https://fuzzyfoot.us-west.host.bsky.network|Free to join|No phone check|
+|https://mazegill.us-west.host.bsky.network|Free to join|No phone check|
+|https://witchesbutter.us-west.host.bsky.network|Free to join|No phone check|
+|https://panus.us-west.host.bsky.network|Free to join|No phone check|
+|https://chanterelle.us-west.host.bsky.network|Free to join|No phone check|
+|https://button.us-west.host.bsky.network|Free to join|No phone check|
+|https://leccinum.us-west.host.bsky.network|Free to join|No phone check|
+|https://elfcup.us-east.host.bsky.network|Free to join|No phone check|
+|https://helvella.us-east.host.bsky.network|Free to join|No phone check|
+|https://gomphidius.us-west.host.bsky.network|Free to join|No phone check|
+|https://scalycap.us-west.host.bsky.network|Free to join|No phone check|
+|https://chaga.us-west.host.bsky.network|Free to join|No phone check|
+|https://lepista.us-west.host.bsky.network|Free to join|No phone check|
+|https://milkcap.us-west.host.bsky.network|Free to join|No phone check|
+|https://scarletina.us-east.host.bsky.network|Free to join|No phone check|
+|https://mycena.us-west.host.bsky.network|Free to join|No phone check|
+|https://parasol.us-east.host.bsky.network|Free to join|No phone check|
+|https://bracket.us-west.host.bsky.network|Free to join|No phone check|
+|https://shaggymane.us-west.host.bsky.network|Free to join|No phone check|
+|https://entoloma.us-west.host.bsky.network|Free to join|No phone check|
+|https://polypore.us-west.host.bsky.network|Free to join|No phone check|
+|https://blusher.us-east.host.bsky.network|Free to join|No phone check|
+|https://magic.us-west.host.bsky.network|Free to join|No phone check|
+|https://boletus.us-west.host.bsky.network|Free to join|No phone check|
+|https://splitgill.us-east.host.bsky.network|Free to join|No phone check|
+|https://panthercap.us-east.host.bsky.network|Free to join|No phone check|
+|https://suillus.us-west.host.bsky.network|Free to join|No phone check|
+|https://woodear.us-west.host.bsky.network|Free to join|No phone check|
+|https://banana-party.objkt.dev|Invite required|No phone check|
+|https://goodmkt.id|Free to join|No phone check|
 |https://pds.kaeck.name|Invite required|No phone check|
 |https://bsky.aprokira.lu|Invite required|No phone check|
 |https://pds.simpler-sns.jp|Invite required|No phone check|
@@ -153,6 +155,7 @@ Updated at 10/9/2026, 10:11:42 AM
 |https://fobomail.duckdns.org|Invite required|No phone check|
 |https://pds-130-110-238-163.nip.io|Free to join|No phone check|
 |https://pds.leoqi.ca|Free to join|No phone check|
+|https://t4tkiss.ing|Invite required|No phone check|
 |https://sds.atproto.staging.silvi.earth|Free to join|No phone check|
 |https://bsky.depertat.net|Invite required|No phone check|
 |https://pds.capturevoices.com|Invite required|No phone check|
@@ -185,6 +188,7 @@ Updated at 10/9/2026, 10:11:42 AM
 |https://fazen.social|Free to join|No phone check|
 |https://salu51-qqq.hf.space|Free to join|No phone check|
 |https://pds15.rx-social.net|Invite required|No phone check|
+|https://pds.oathling.world|Free to join|No phone check|
 |https://at.yugoslavia.best|Invite required|No phone check|
 |https://pds13.rx-social.net|Invite required|No phone check|
 |https://team.yakimapride.org|Invite required|No phone check|
@@ -419,6 +423,7 @@ Updated at 10/9/2026, 10:11:42 AM
 |https://flint.mitten.social|Invite required|No phone check|
 |https://certified-apppds-core-epds-pr-210.up.railway.app|Free to join|No phone check|
 |https://certified-apppds-core-epds-pr-209.up.railway.app|Free to join|No phone check|
+|https://rpg.actor|Invite required|No phone check|
 |https://pds.riddims.app|Invite required|No phone check|
 |https://gumby.social|Invite required|No phone check|
 |https://bsky.bark.wolp.chat|Invite required|No phone check|
@@ -427,6 +432,7 @@ Updated at 10/9/2026, 10:11:42 AM
 |https://certified-apppds-core-epds-pr-204.up.railway.app|Free to join|No phone check|
 |https://philtz.co|Invite required|No phone check|
 |https://pds.scottlanoue.com|Invite required|No phone check|
+|https://pds.witchcraft.systems|Invite required|No phone check|
 |https://losers.club|Invite required|No phone check|
 |https://bsky-pds.dextraspace.net|Invite required|No phone check|
 |https://logue.bot|Invite required|No phone check|
@@ -459,11 +465,15 @@ Updated at 10/9/2026, 10:11:42 AM
 |https://pds.shuuji3.xyz|Invite required|No phone check|
 |https://pds.frm.ink|Invite required|No phone check|
 |https://pds.smallbury.social|Invite required|No phone check|
+|https://pds.gezellix.com|Invite required|No phone check|
 |https://pds.justin-stanley.com|Invite required|No phone check|
+|https://gems.xyz|Invite required|No phone check|
 |https://standingpad.org|Invite required|No phone check|
 |https://did-key-zq3shyaf1afxcytt2xuiqujkd52bg4ilsryjrwvaamejmfc1b.xrpc.fedproxy.com|Free to join|No phone check|
+|https://pds.divine.video|Invite required|No phone check|
 |https://yorglemedia.org|Invite required|No phone check|
 |https://bsky.isquite.gay|Invite required|No phone check|
+|https://kimbia.social|Invite required|No phone check|
 |https://certified-apppds-core-epds-pr-203.up.railway.app|Free to join|No phone check|
 |https://me.jyrgi.de|Invite required|No phone check|
 |https://pds.tokyonight.city|Invite required|No phone check|
@@ -534,11 +544,13 @@ Updated at 10/9/2026, 10:11:42 AM
 |https://bluesky.starfyre.de|Invite required|No phone check|
 |https://did-key-zq3shpckoyw3hnp68f4akt4yiorvusrshhfg5twfz4vrp6mwr.xrpc.fedproxy.com|Free to join|No phone check|
 |https://did-key-zq3shmgdedxwntzr7tdtgmhkdiforr46sac2gtx89hel2iz4h.xrpc.fedproxy.com|Free to join|No phone check|
+|https://pds.skyphone.social|Free to join|No phone check|
 |https://0x0.qzz.io|Free to join|No phone check|
 |https://syndrome.rehab|Invite required|No phone check|
 |https://epds.35-225-123-226.sslip.io|Free to join|No phone check|
 |https://pds.fpl.dev|Invite required|No phone check|
 |https://pds.workolio.app|Free to join|No phone check|
+|https://pds.clear.community|Free to join|No phone check|
 |https://nstar.social|Invite required|No phone check|
 |https://dev.pds.blackstar.quest|Free to join|No phone check|
 |https://pds.fileorbit.cloud|Free to join|No phone check|
@@ -549,6 +561,7 @@ Updated at 10/9/2026, 10:11:42 AM
 |https://dev.certified.app|Invite required|No phone check|
 |https://pds.7rnx.net|Free to join|No phone check|
 |https://atlas-pds-staging.rebuildingus.org|Invite required|No phone check|
+|https://mir.cee.wtf|Invite required|No phone check|
 |https://pds-dev.wsocial.dev|Invite required|No phone check|
 |https://atlas-pds.rebuildingus.org|Invite required|No phone check|
 |https://dev.pds.konastat.com|Invite required|No phone check|
@@ -592,17 +605,23 @@ Updated at 10/9/2026, 10:11:42 AM
 |https://did-key-zq3shcq5hx47s6gm3eggblybxsrbeijmwexxkuzsqwi33weor.xrpc.fedproxy.com|Free to join|No phone check|
 |https://did-key-zq3shibhwb1af8fe8lpta3a6oykaa1ujwoubkc2j2uw2h6mjs.xrpc.fedproxy.com|Free to join|No phone check|
 |https://tdpl.io|Invite required|No phone check|
+|https://selfhosted.social|Free to join|Phone required|
 |https://twinkpds.duckdns.org|Invite required|No phone check|
+|https://gist.afrilingua.ai|Free to join|No phone check|
+|https://northsky.social|Invite required|No phone check|
 |https://sefirah.dev|Invite required|No phone check|
 |https://bsky.lochetfamily.com|Invite required|No phone check|
 |https://Blacksky.app|Free to join|Phone required|
+|https://pds.whack.dev|Invite required|No phone check|
 |https://roccobots.beastmoderocco.com|Invite required|No phone check|
 |https://roomy.chat|Invite required|No phone check|
 |https://tempomusic.social|Invite required|No phone check|
 |https://pds-test.jiggytom.com|Invite required|No phone check|
+|https://u.jalsa.world|Invite required|No phone check|
 |https://pds.acey.sh|Invite required|No phone check|
 |https://pds.booksky.app|Free to join|No phone check|
 |https://pds.cpricedomain.net|Invite required|No phone check|
+|https://medsky.network|Free to join|Phone required|
 |https://vac.vacpro.fyi|Invite required|No phone check|
 |https://certified-apppds-core-epds-pr-194.up.railway.app|Free to join|No phone check|
 |https://test-epds.gainforest.app|Invite required|No phone check|
@@ -616,31 +635,53 @@ Updated at 10/9/2026, 10:11:42 AM
 |https://repo.actor|Invite required|No phone check|
 |https://did-key-zq3shuzxcrwabwfcmuqxhpa3xuohcyhvlbm5nahumtsugxkyf.xrpc.fedproxy.com|Free to join|No phone check|
 |https://did-key-zq3shdt1nduudrurb1spdtu1yawpzhzywgyvfpm9fdnzu4aok.xrpc.fedproxy.com|Free to join|No phone check|
+|https://gifthood.social|Invite required|No phone check|
+|https://certified.one|Invite required|No phone check|
 |https://as.lasd.site|Free to join|No phone check|
+|https://atproto.brid.gy|Free to join|No phone check|
+|https://pds.polymarket.social|Free to join|No phone check|
 |https://did-key-zq3shw2kexsc7rmsvrwqzg2vux6egkhdnxjukcqg8mziivhas.xrpc.fedproxy.com|Free to join|No phone check|
+|https://kairos.solar|Invite required|No phone check|
 |https://did-key-zq3shh347epwycij6mkwwcen819xnczsoppdiaxzvhg8yd56a.xrpc.fedproxy.com|Free to join|No phone check|
 |https://did-key-zq3shigsbtrqzwmxfegxevfmuopjyyabvge3j2uiweax7ifmv.xrpc.fedproxy.com|Free to join|No phone check|
+|https://blacksky.app|Free to join|Phone required|
 |https://did-key-zq3shxsdhmbbnzlgeyfvsmrztgliauji295jiao2juxanpkk1.xrpc.fedproxy.com|Free to join|No phone check|
 |https://did-key-zq3shvx5xsdv2mmirakpj2kwlxz9gvusnjtzf4m5qdgaqpfef.xrpc.fedproxy.com|Free to join|No phone check|
+|https://eurosky.social|Free to join|Phone required|
+|https://pds.wsocial.network|Invite required|No phone check|
+|https://pds.astra.lgbt|Invite required|No phone check|
 |https://pds.dirty.social|Invite required|No phone check|
+|https://at.app.wafrn.net|Invite required|No phone check|
 |https://ezpds-staging.up.railway.app|Invite required|No phone check|
+|https://tngl.sh|Invite required|No phone check|
+|https://api.roomy.space|Free to join|No phone check|
 |https://morpheu.fun|Free to join|No phone check|
+|https://keik.info|Invite required|No phone check|
 |https://npmx.social|Free to join|Phone required|
 |https://certified-apppds-core-epds-pr-187.up.railway.app|Free to join|No phone check|
+|https://pds.authority-one.com|Invite required|No phone check|
+|https://pds.radial.fan|Free to join|Phone required|
 |https://bsky.cooey.club|Invite required|No phone check|
 |https://social.a-labs.org|Invite required|No phone check|
+|https://surf.social|Invite required|No phone check|
 |https://bsky.yeet.fm|Invite required|No phone check|
+|https://pds.pckt.cafe|Free to join|Phone required|
 |https://did-key-zq3shrbah7v5gf8yxetacd8dtiskcqvju5nxzbuxwj37pwssw.xrpc.fedproxy.com|Free to join|No phone check|
 |https://did-key-zq3shcpelskhbrb61hqddgmtxmknccoqkpp9uqun9qbpaaf9a.xrpc.fedproxy.com|Free to join|No phone check|
+|https://pds.plcs.fun|Free to join|No phone check|
 |https://dev.eu1.pwkl.social|Invite required|No phone check|
 |https://dev.us1.pwkl.social|Invite required|No phone check|
 |https://certified-apppds-core-epds-pr-192.up.railway.app|Free to join|No phone check|
+|https://outof.coffee|Invite required|No phone check|
 |https://fmpds.cacheblasters.com|Free to join|No phone check|
+|https://bsky.shadowcaster.ge|Invite required|No phone check|
 |https://certified-apppds-core-epds-pr-191.up.railway.app|Free to join|No phone check|
+|https://pds.opnmt.me|Invite required|No phone check|
 |https://certified-apppds-core-pr-base.up.railway.app|Free to join|No phone check|
 |https://certified-apppds-core-epds-pr-189.up.railway.app|Free to join|No phone check|
 |https://pds.tsepa.net|Invite required|No phone check|
 |https://pds.rip|Free to join|Phone required|
+|https://pds.sprk.so|Free to join|No phone check|
 |https://ds.raceef.com|Invite required|No phone check|
 |https://pds.yote.sh|Invite required|No phone check|
 |https://coseeker.org|Invite required|No phone check|
@@ -652,83 +693,7 @@ Updated at 10/9/2026, 10:11:42 AM
 |https://repo.layers.pub|Invite required|No phone check|
 |https://test-pds.dinakernel.com|Free to join|No phone check|
 |https://margin.cafe|Free to join|Phone required|
-|https://did-key-zq3shtxeuepwbsjmqaeo1ssladewn29l7usguncpgyy4yx5xq.xrpc.fedproxy.com|Free to join|No phone check|
-|https://pds.polymarket.social|Free to join|No phone check|
-|https://pds.radial.fan|Free to join|Phone required|
-|https://pds.wsocial.network|Invite required|No phone check|
-|https://atproto.brid.gy|Free to join|No phone check|
-|https://pds.astra.lgbt|Invite required|No phone check|
-|https://certified.one|Invite required|No phone check|
-|https://outof.coffee|Invite required|No phone check|
-|https://gems.xyz|Invite required|No phone check|
-|https://pds.sprk.so|Free to join|No phone check|
-|https://did-key-zq3sho9pl67jjsgfqflkpt9u7dxh5hxbbyggwwcbpcdgxenvy.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shsfe58smlt7aftekggzlrwphocgtdhjwcwn2tg35thbhd.xrpc.fedproxy.com|Free to join|No phone check|
-|https://blacksky.app|Free to join|Phone required|
-|https://rpg.actor|Invite required|No phone check|
-|https://tngl.sh|Invite required|No phone check|
-|https://eurosky.social|Free to join|Phone required|
-|https://pds.authority-one.com|Invite required|No phone check|
-|https://pds.kitsune.earth|Invite required|No phone check|
-|https://pds.clear.community|Free to join|No phone check|
-|https://did-key-zq3shonbxlr8spehgbtnnb6kc8ewndiymzqkneadbxjtewrda.xrpc.fedproxy.com|Free to join|No phone check|
-|https://gist.afrilingua.ai|Free to join|No phone check|
-|https://did-key-zq3shqvey4zkhzbdcbdxb9rfrlinz96myf6skmenhvkdrtucp.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shruwfwqpaulzwwq3yr146cqjwnfayuhxjx3mcjtapvo6d.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shixety3ddj5kqekoppgf3z7zwayx5tjvcmqjmxxtlb2nr.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3sha1qt4idcefja9nc3asziqdzkktpbqdmg1qadcxfu624w.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shpqvussqkczmdyun3cnjrktmlb84ex4qnjfvxiujs8dad.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shdyy8dcwi6eurxxz1f8wq5trhis3wdrpucber1cmp4f4c.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shpc2qbcoz2yo5eenwazomppyzwxyegh4ammjddtyh7wn8.xrpc.fedproxy.com|Free to join|No phone check|
-|https://medsky.network|Free to join|Phone required|
-|https://did-key-zq3shanepmxpq4frpcj4pnbyag87iw5f68cpg6gkseypjgvmv.xrpc.fedproxy.com|Free to join|No phone check|
-|https://u.jalsa.world|Invite required|No phone check|
-|https://did-key-zq3shuehrlxpmvbsarrtydacpufwivmsmtljsmaxkv7egcme7.xrpc.fedproxy.com|Free to join|No phone check|
-|https://atproto.izu.re|Invite required|No phone check|
-|https://mir.cee.wtf|Invite required|No phone check|
-|https://did-key-zq3shsg7mwtvg9m2ivc2zlsr3itbm35tn1sfqb9rwetc6d7of.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shck1nekyas1jf6c8hi2k5unhyyementfuuyobuakhdtkh.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shcto5ynzv7nh75ckwvfvn8qgvfa3az7dwjqxty2cihg4j.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shshfwefblnfjvnkgyeaa3by7jmthhzoyw9fmxydttdnkw.xrpc.fedproxy.com|Free to join|No phone check|
-|https://surf.social|Invite required|No phone check|
-|https://did-key-zq3shrngvqm9wcux1qwctu6teuewsmlcjwymnuwrsqdz6539i.xrpc.fedproxy.com|Free to join|No phone check|
-|https://bag.laugh.town|Invite required|No phone check|
-|https://did-key-zq3shtqvkumatsbyx4xathkbahvmefc1xafacbtfr7srzclhm.xrpc.fedproxy.com|Free to join|No phone check|
-|https://filmstar.social|Free to join|No phone check|
-|https://did-key-zq3shoib6blldv6d9tescfusgf7fvabkcbnpgafdgzms2wkg5.xrpc.fedproxy.com|Free to join|No phone check|
-|https://selfhosted.social|Free to join|Phone required|
-|https://did-key-zq3shn17kreefc7knjtreemrcfgzb2uz1vjhvgsxx8mxbyhdt.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shugh12wldwzeuk72iuthmurjnotekfenjunh5upd78qay.xrpc.fedproxy.com|Free to join|No phone check|
-|https://bsky.shadowcaster.ge|Invite required|No phone check|
-|https://did-key-zq3shfsyagakwb2jqgujrtqcggldgpmz9gezppq3mhcedrz9s.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shqw7kr9svfsgmvh8vfiyq6tfhzoxuexc1maxrwnmqjeh2.xrpc.fedproxy.com|Free to join|No phone check|
-|https://did-key-zq3shqlmk58fg25gtba7wl4wkkcmapvd9kej7tjim27xmzdwg.xrpc.fedproxy.com|Free to join|No phone check|
-|https://kimbia.social|Invite required|No phone check|
-|https://pds.beacon.antitech.app|Invite required|No phone check|
-|https://pds.skyphone.social|Free to join|No phone check|
-|https://pds.opnmt.me|Invite required|No phone check|
-|https://gifthood.social|Invite required|No phone check|
-|https://pds.gezellix.com|Invite required|No phone check|
-|https://pds.witchcraft.systems|Invite required|No phone check|
-|https://certified-apppds-core-epds-pr-188.up.railway.app|Free to join|No phone check|
-|https://at.app.wafrn.net|Invite required|No phone check|
-|https://kairos.solar|Invite required|No phone check|
-|https://pds.plcs.fun|Free to join|No phone check|
-|https://at.kotodama.ca|Invite required|No phone check|
-|https://pds.mihaizaurus.at|Invite required|No phone check|
-|https://pds.divine.video|Invite required|No phone check|
-|https://pds.pckt.cafe|Free to join|Phone required|
-|https://api.roomy.space|Free to join|No phone check|
-|https://pds.whack.dev|Invite required|No phone check|
-|https://t4tkiss.ing|Free to join|No phone check|
-|https://pds.oathling.world|Free to join|No phone check|
-|https://keik.info|Invite required|No phone check|
-|https://pds.ebil.club|Invite required|No phone check|
-|https://social.homenasuh.com|Invite required|No phone check|
-|https://northsky.social|Invite required|No phone check|
-|https://neqo-pds.de|Invite required|No phone check|
 |https://pds.1095.me|Free to join|No phone check|
-|https://modernleft.network|Invite required|No phone check|
-|https://pds.dieofdeath.gay|Invite required|No phone check|
+|https://did-key-zq3shtxeuepwbsjmqaeo1ssladewn29l7usguncpgyy4yx5xq.xrpc.fedproxy.com|Free to join|No phone check|
 
 Klearlist © 2024-2025 [mimonelu](https://bsky.app/profile/mimonelu.net)
